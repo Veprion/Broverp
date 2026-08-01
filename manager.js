@@ -1,4 +1,34 @@
 let x = 0;
+let y = false;
+let cat = new Audio("soundsz/cat.wav");
+let chicken = new Audio("soundsz/chicken.wav");
+let cow = new Audio("soundsz/cow.wav");
+let cricket = new Audio("soundsz/cricket.wav");
+let goat = new Audio("soundsz/goat.wav");
+let horse = new Audio("soundsz/horse.wav");
+let horse2 = new Audio("soundsz/horse2.wav");
+let pig = new Audio("soundsz/pig.wav");
+let rooster = new Audio("soundsz/rooster.wav");
+let sheep = new Audio("soundsz/sheep.wav");
+let soundsz = [cat, chicken, cow, cricket, goat, horse, horse2, pig, rooster, sheep];
+
+
+function toggleMuted() {
+  y = !y;
+  if (y)
+    document.getElementById('mutebut').src = "imagesz/WoVolum.png";
+  else
+    document.getElementById('mutebut').src = "imagesz/WiVolum.png";
+}
+
+function plrmsnD() {
+    let l = soundsz.length;
+    let n = Math.floor(getRandomArbitrary(0, l));
+    if (!y) {
+        soundsz[n].volume = 0.2;
+        soundsz[n].play();
+    }
+}
 
 function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
@@ -31,11 +61,11 @@ function getTheS() {
 function changeD() {
     let frsthlf = getTheF();
     let scndhlf = getTheS();
-    let l = frsthlf.length
-    let n = Math.floor(getRandomArbitrary(0, l))
-    let m = Math.floor(getRandomArbitrary(0, l))
+    let l = frsthlf.length;
+    let n = Math.floor(getRandomArbitrary(0, l));
+    let m = Math.floor(getRandomArbitrary(0, l));
     while (m == n) {
-        m = Math.floor(getRandomArbitrary(0, l))
+        m = Math.floor(getRandomArbitrary(0, l));
     }
     let newtext = frsthlf[n] + scndhlf[m];
     document.getElementById("textooo").innerHTML = newtext;
