@@ -1,16 +1,26 @@
 let x = 0;
 let y = false;
-let cat = new Audio("soundsz/cat.wav");
-let chicken = new Audio("soundsz/chicken.wav");
-let cow = new Audio("soundsz/cow.wav");
-let cricket = new Audio("soundsz/cricket.wav");
-let goat = new Audio("soundsz/goat.wav");
-let horse = new Audio("soundsz/horse.wav");
-let horse2 = new Audio("soundsz/horse2.wav");
-let pig = new Audio("soundsz/pig.wav");
-let rooster = new Audio("soundsz/rooster.wav");
-let sheep = new Audio("soundsz/sheep.wav");
-let soundsz = [cat, chicken, cow, cricket, goat, horse, horse2, pig, rooster, sheep];
+let cat2 = new Audio("soundsz/Cat_2.m4a");
+let cat = new Audio("soundsz/Cat.m4a");
+let chicken = new Audio("soundsz/Chicken.m4a");
+let cow = new Audio("soundsz/Cow.m4a");
+let cuckoo = new Audio("soundsz/Cuckoo.m4a");
+let dog = new Audio("soundsz/Dog.m4a");
+let donkey = new Audio("soundsz/Donkey.m4a");
+let duck2 = new Audio("soundsz/Duck_2.m4a");
+let duck = new Audio("soundsz/Duck.wav");
+let eagle = new Audio("soundsz/Eagle.m4a");
+let elephant = new Audio("soundsz/Elephant.m4a");
+let frog = new Audio("soundsz/Frog.m4a");
+let gorilla = new Audio("soundsz/Gorilla.m4a");
+let horse = new Audio("soundsz/Horse.m4a");
+let hyena = new Audio("soundsz/Hyena.m4a");
+let monkey = new Audio("soundsz/Monkey.m4a");
+let pig = new Audio("soundsz/Pig.m4a");
+let rooster = new Audio("soundsz/Rooster.m4a");
+let sheep = new Audio("soundsz/Sheep.m4a");
+let wolf = new Audio("soundsz/Wolf.m4a");
+let soundsz = [cat2, cat, chicken, cow, cuckoo, dog, donkey, duck2, duck, eagle, elephant, frog, gorilla, horse, hyena, monkey, pig, rooster, sheep, wolf];
 
 
 function toggleMuted() {
